@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="gemStoreAttributeDirectiveFull">
+  <head>
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  
+   <script type="text/javascript" src="jsModules/store-directives.js"></script>
+  <script type="text/javascript" src="jsModules/app.js"></script>
+    <link rel="stylesheet"  href="css/application.css">
+  </head>
+ 
+  <body ng-controller="StoreController as store">
+    <header>
+      <h1 class="text-center">Flatlander Crafted Gems</h1>
+      <h2 class="text-center">– an Angular store –</h2>
+    </header>
+    <div class="list-group">
+      <div class="list-group-item" ng-repeat="product in store.products">
+        <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+        <!-- product gallery -->
+        <product-gallery></product-gallery>
+
+        <!-- Product Tabs  -->
+       <product-tabs> </product-tabs>
+      </div>
+    </div>
+  </body>
+</html>

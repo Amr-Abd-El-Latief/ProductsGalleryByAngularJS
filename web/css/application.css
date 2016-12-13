@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 12, 2016, 11:43:19 AM
+    Author     : amr
+*/
+
+.ng-invalid.ng-dirty{
+  
+  border-color: red;
+}
+
+.ng-valid.ng-dirty{
+  border-color: green;
+}
